@@ -1,0 +1,100 @@
+body{
+  background-color: rgb(238, 232, 232);
+}
+.logo{
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(193, 89, 89);
+}
+
+.links a{
+ text-decoration: none;
+ margin-right: 20px;
+ color: rgb(193, 89, 89);
+ cursor: pointer;
+font-size: large;
+}
+
+.links span{
+  font-size: large;
+  margin-left: 40px;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title{
+  font-size: 30px;
+  color: rgb(193, 89, 89);
+}
+.productList{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.product{
+  border: 1px solid none;
+  background-color: white;
+  width: 200px;
+  height: 260px;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.product img {
+  height: 80px;
+}
+
+.product button {
+  background-color: rgb(187, 72, 187);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.emptyPage{
+  text-align: center;
+  font-size: 40px;
+  color: green;
+}
+
+.delete{
+  background-color: red !important;
+}
+
+.productPage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.span{
+  position: relative;
+  margin-right: 40px;
+}
+
+.icon{
+  position: absolute;
+  bottom: 20px;
+  background-color: white;
+  width: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color:  rgb(193, 89, 89);
+ 
+  
+  
+}
