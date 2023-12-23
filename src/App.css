@@ -4,8 +4,10 @@ body{
 .logo{
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
-
-
+  cursor: pointer;
+  margin: 24px 0;
+  text-decoration: none;
+  color: rgb(193, 89, 89);
 }
 .header{
   display: flex;
@@ -25,6 +27,10 @@ font-size: large;
 .links span{
   font-size: large;
   margin-left: 40px;
+}
+
+.links .active{
+  text-decoration: underline;
 }
 .home{
   display: flex;
@@ -61,6 +67,31 @@ font-size: large;
   border: none;
   padding: 5px;
   border-radius: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.product button.edit:hover{
+  background-color: rgb(191, 4, 191) !important;
+}
+
+.add{
+padding: 5px 10px !important;
+background-color: rgb(20, 180, 20) !important;
+}
+
+.add:hover{
+  background-color: rgb(12, 155, 12) !important;
+}
+
+.product button:hover{
+  background-color: rgb(202, 35, 202);
+}
+
+.product button.edit {
+  background-color: rgb(187, 72, 187);
+  margin-right: 10px;
+  padding: 5px 10px;
 }
 
 .emptyPage{
@@ -70,7 +101,11 @@ font-size: large;
 }
 
 .delete{
-  background-color: red !important;
+  background-color: rgb(235, 61, 61) !important;
+}
+
+.delete:hover{
+  background-color: rgb(222, 20, 20) !important;
 }
 
 .productPage{
@@ -94,7 +129,41 @@ font-size: large;
   font-size: 20px;
   border-radius: 10px;
   background-color:  rgb(193, 89, 89);
- 
-  
-  
+}
+
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  background-color: white;
+  width: 60%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.modal-content input , textarea {
+  margin: 10px 0;
+}
+
+.close{
+  font-size: 30px;
+  color: red;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
 }

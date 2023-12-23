@@ -1,16 +1,16 @@
 import React from 'react'
 import {BsFillBasketFill} from 'react-icons/bs'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 const Header = () => {
   const baskets = useSelector((state) => state.product);
   return (
     <div className='header'>
-      <p className='logo'>Andromeda Store</p>
+      <Link to={'/'} className='logo'>Andromeda Store</Link>
       <div className='links'>
-        <Link to={'/'}>Home</Link>
-        <Link to={'products'}>Products</Link>      
+        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={'products'}>Products</NavLink>      
       </div>
 
    <div className='span'>
