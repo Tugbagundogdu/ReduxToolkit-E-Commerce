@@ -167,3 +167,10 @@ background-color: rgb(20, 180, 20) !important;
   display: flex;
   flex-direction: column;
 }
+
+.loading{
+  text-align: center;
+  font-size: 60px;
+  color: green;
+  font-weight: 700;
+}

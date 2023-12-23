@@ -22,9 +22,8 @@ const Home = () => {
        <p className='title'>Welcome To The Andromeda Store</p>
        <div className='productList'>
        {
-        products.map((product)=>{
-          return <Product key={product.id} product={product} />
-        })
+        products.length === 0 ? <h1 className='loading'>Loading...</h1> :
+         products.map((product, i) => <Product product={product} key={i}/>)
        }
        </div>
     </div>
